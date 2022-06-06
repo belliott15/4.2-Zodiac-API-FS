@@ -1,4 +1,4 @@
-export const zodiacData = [
+const zodiacData = [
   { 
     'id':'1', 
     'name':'aquarius', 
@@ -71,3 +71,5 @@ export const zodiacData = [
     'symbol':'Virgin' 
   }
 ];
+
+module.exports = { zodiacData };
