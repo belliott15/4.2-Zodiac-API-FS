@@ -14,3 +14,26 @@ body{
     padding-left: 20px;
 }
 
+.mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main-table{
+    width: 80%;
+    border: 4px inset black;
+}
+
+.table-cell{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.stack{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
