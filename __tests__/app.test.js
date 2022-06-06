@@ -15,7 +15,7 @@ describe('4.2-Zodiac-API-FS routes', () => {
     expect(res.body).toEqual(expected);  
   });
 
-  it('/zodiac/:id should return one zodiac', async () => {
+  it('/zodiac/:id(2) should return aries zodiac sign', async () => {
     const res = await request(app).get('/zodiac/2');
     const zodiac2 = { 
       id:'2', 
@@ -24,6 +24,17 @@ describe('4.2-Zodiac-API-FS routes', () => {
       symbol:'Ram'
     };
     expect(res.body).toEqual(zodiac2);
+  });
+
+  it('/zodiac/:id(3) should return aries zodiac sign', async () => {
+    const res = await request(app).get('/zodiac/3');
+    const zodiac3 = { 
+      id:'3', 
+      name:'cancer', 
+      dates:'Jun 21 - Jul 22', 
+      symbol:'Crab' 
+    };
+    expect(res.body).toEqual(zodiac3);
   });
 
   afterAll(() => {
