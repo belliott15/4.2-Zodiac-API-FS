@@ -1,0 +1,50 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    background-color: steelblue;
+    height: 90px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+}
+
+.mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.mainpage p{
+    margin: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.main-table{
+    width: 80%;
+    border: 4px inset black;
+}
+
+.table-cell{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.stack{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.stack a{
+    margin: 5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+    <title>AnyAPI</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-text">Zodiac</h1>
+    </header>
+    <main class="mainpage">
+      <p>This API uses a list of Zodiac signs as its resource. The routes are
+      as follows:</p>
+      <table class="main-table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-cell">Route</th>
+            <th class="table-cell">Method</th>
+            <th class="table-cell">Description</th>
+            <th class="table-cell">Example</th>
+          </tr>
+        </thead>
+        <tbody class="table-row-group">
+          <tr class="border-2">
+            <td class="table-cell "><pre>/zodiac</pre></td>
+            <td class="table-cell  text-center">GET</td>
+            <td class="table-cell ">Gets a list of zodiacs id and name</td>
+            <td class="table-cell ">
+              <a href="/zodiac" target="_blank" class="text-blue-700"
+                >List Zodiacs</a
+              >
+            </td>
+          </tr>
+          <tr class="border-2">
+            <td class="table-cell "><pre>/zodiac/:id</pre></td>
+            <td class="table-cell  text-center">GET</td>
+            <td class="table-cell ">
+              Returns the detail about the Zodiac matching the id in the parameter
+            </td>
+            <td class="table-cell stack">
+              <a href="/zodiac/1" target="_blank" class="text-blue-700"
+                >Get Zodiac 1</a
+              > 
+              <a href="/zodiac/3" target="_blank" class="text-blue-700"
+                  >Get Zodiac 3</a
+                >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
